@@ -1,0 +1,15 @@
+# GUESSING NUMBER
+
+import random
+num = random.randint(1,100)
+guessNumber = int(input("Guess the number (1-100): "))
+while (num!="getout"):
+    if(guessNumber < num):
+        print("Your guess is low")
+        guessNumber = int(input("Enter the number (1-100): "))
+    elif(guessNumber > num):
+        print("Your guess is high")
+        guessNumber = int(input("Enter the number (1-100): "))
+    else:
+        print("Your guess is correct")
+        break
